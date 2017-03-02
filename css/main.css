@@ -1,0 +1,190 @@
+*{
+	border: solid 1px black;
+	-webkit-user-select: none ;
+	-moz-user-select: none ;
+	-ms-user-select: none ;
+	-o-user-select: none ;
+	user-select: none ;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*common set upon*/
+
+
+.clearfix:after, .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+li{
+	list-style: none;
+}
+
+ul{
+	margin: 0px;
+	padding-left: 0px;
+	font-size: 12px;
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+h2{
+	text-transform: capitalize;
+	}
+
+h1, h2, h3{
+	margin: 0;
+}
+
+p{
+	margin: 30px 10px 30px 0;
+	line-height: 1.5;
+}
+
+.btn{
+	padding: 12px 23px;
+	display: inline-block;
+
+	text-transform: uppercase;
+	background-color: #3fceff;
+	text-decoration: none;
+	border-radius: 30px;
+
+	color: white;
+	font-size: .2rem;
+	letter-spacing: 1px;
+
+	box-shadow: 0px 5px 3px rgba(0,0,0,.3);
+}
+
+section{
+	padding: 80px 0;
+}
+
+
+/*Grid set*/
+
+.row{
+	margin: 0 -15px;
+}
+
+.col-6{
+	position: relative;
+
+	float: left;
+	width: 50%;
+	padding: 0 15px;
+}
+
+.col-6 h2{
+	margin-bottom: 35px;
+	font-size: 2.2rem;
+}
+
+
+
+
+/*else*/
+
+
+#logo{
+	float: left;
+}
+
+.container{
+	display: block;
+	width: 1180px;
+	margin: 0 auto;
+}
+
+nav{
+	float: right;
+	line-height: 90px;
+
+}
+
+nav li{
+	float: left;
+}
+
+nav a{
+	padding: 0 21px;
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	color: #333;
+}
+
+nav a:hover{
+	color: #3FCEFF;
+}
+
+.banner{
+	width: 100%;
+	background-image: url(http://lorempixel.com/1900/700/);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+
+	text-align: center;
+	padding: 235px 0;
+	text-transform: uppercase;
+}
+
+.bannertitle{
+	margin-bottom: 120px;	
+	background-color: rgba(255,255,255,.5);
+	padding: 50px;
+}
+
+.banner .intro-text, h1, .subtitle{
+	/*text-shadow: 0px 0px 50px #eee;*/
+}
+
+.banner .intro-text{
+	font-size: 1.2rem;
+	font-weight: 400;
+	letter-spacing: 4px;
+}
+
+.banner h1{
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin: 0.3rem;
+}
+
+.banner .subtitle{
+	font-size: 0.9rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 0.8rem;
+}
+
+.video-wrapper{
+	box-shadow: 20px 20px 0 rgba(0,0,0,.1);
+/*	width: 95%;
+	height: 300px;
+	background-color: #ccc;
+
+	position: absolute;
+	right: 0;
+*/	
+}
+
+.about .btn{
+	position: absolute;
+	bottom: -70px;
+}
+
+
+
+
