@@ -1,5 +1,5 @@
 *{
-	border: solid 1px black;
+	/*border: solid 1px black;*/
 	-webkit-user-select: none ;
 	-moz-user-select: none ;
 	-ms-user-select: none ;
@@ -12,7 +12,7 @@
 }
 
 
-/*common set upon*/
+/*------------------common set-------------------*/
 
 
 .clearfix:after, .row:after {
@@ -37,14 +37,20 @@ h1{
 
 h2{
 	text-transform: capitalize;
-	}
+	font-size: 28px;
+	text-align: center;
+}
+
+h3{
+	font-size: 1.5rem;
+}
 
 h1, h2, h3{
 	margin: 0;
 }
 
 p{
-	margin: 30px 10px 30px 0;
+	margin: 30px 0;
 	line-height: 1.5;
 }
 
@@ -69,10 +75,27 @@ section{
 }
 
 
-/*Grid set*/
+/*----------------------Grid set-----------------------*/
 
 .row{
 	margin: 0 -15px;
+}
+
+.col-3{
+	position: relative;
+	float: left;
+
+	width: 25%;
+	margin: 5px;
+	padding: 5px;
+}
+
+.col-4{
+	position: relative;
+
+	float: left;
+	width: 33.33%;
+	padding: 0 15px;
 }
 
 .col-6{
@@ -91,7 +114,7 @@ section{
 
 
 
-/*else*/
+/*----------------------main css-----------------------*/
 
 
 #logo{
@@ -123,6 +146,7 @@ nav a{
 }
 
 nav a:hover{
+	/*background-color: #3FCEFF;*/
 	color: #3FCEFF;
 }
 
@@ -184,6 +208,226 @@ nav a:hover{
 	position: absolute;
 	bottom: -70px;
 }
+
+.about h2{
+	text-align: left;
+}
+
+
+.ourskill h2{
+	text-align: center;
+	padding-bottom: 35px;
+}
+
+.progress-bar{
+	width: 100%;
+	height: 10px;
+
+	margin: 15px 0;
+	background-color: #d9d9d9;
+}
+
+.percentage{
+	position: absolute;
+	right: 0;
+	top: -25px;
+	right: -20px;
+}
+
+.red, .blue, .green, .yellow{
+	position: relative;
+	height: 10px;
+}
+
+.red{
+	width: 87%;
+	background-color: #F2545B;
+}
+
+.blue{
+	width: 88%;
+	background-color: #3fceff;
+}
+
+.green{
+	width: 78%;
+	background-color: #52aa8a;
+}
+
+.yellow{
+	width: 89%;
+	background-color: #F9CB40;
+}
+
+#working-process{
+	width: 100%;
+	background-color: #f7f7f7;
+
+
+	/*background-image: url(http://lorempixel.com/1900/325/);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;*/
+}
+
+#working-process h2{
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+
+#working-process .col-3, .col-4{
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#working-process .row{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+#working-process .col-3{
+	text-align: center;
+	/*margin: 8px;*/
+	transition-duration: .5s;
+}
+
+#working-process .col-3:hover{
+	border-bottom: 3px solid #3fceff;
+	background-color: white;
+	box-shadow: 0 0 20px rgba(201,201,201, .5)
+}
+
+#working-process h3{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#working-process p{
+	margin: 0 50px;
+}
+
+#whatwedo h2{
+	text-align: center;
+	padding: 40px;
+}
+
+#whatwedo .col-4{
+	display: flex;
+	flex-direction: row;
+}
+
+#whatwedo h3, p{
+	margin: 10px 5px;
+}
+
+#whatwedo h3{
+	font-size: 1.2rem;
+}
+
+#whatwedo .col-4:hover h3{
+		color: #3fceff;
+		transition-duration: .2s;
+}
+
+#achievement{
+	background-color: #333;
+	color: white;
+}
+
+#achievement .row{
+	display: flex;
+	justify-content: space-between;
+}
+
+#achievement .col-3{
+	text-align: center;
+	transition-duration: .5s;
+}
+
+#achievement p{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+#ourportfolio h2{
+	text-align: center;
+}
+
+#ourportfolio a{
+	padding: 10px 20px;
+	text-decoration: none;
+	display: block;
+
+	color: #cbcbcb;
+}
+
+#ourportfolio a:hover{
+	color: #3fceff;
+}
+
+#ourportfolio ul{
+	height: 40px;
+	margin-top: 40px;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#ourportfolio li{
+	float: left
+}
+
+.viewbox{
+	width: 100%;
+	/*display: flex;*/
+}
+
+.photo{
+	background-color: #333;
+	display: inline-flex;
+	align-content: flex-start;
+}
+
+.photo .no1, .no2, .no4, .no6{
+	width: 390px;
+	height: 300px;
+}
+
+.photo .no3, .no5{
+	width: 390px;
+	height: 600px;
+}
+
+.photo .no7{
+	width: 780px;
+	height: 600px;
+}
+
+
+
+#pricetable .col-3{
+	text-align: center;
+}
+
+#pricetable h3{
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
