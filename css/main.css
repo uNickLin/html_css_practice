@@ -70,6 +70,23 @@ p{
 	box-shadow: 0px 5px 3px rgba(0,0,0,.3);
 }
 
+.btn-unclick{
+	padding: 12px 23px;
+	display: inline-block;
+
+	text-transform: uppercase;
+	background-color: #fff;
+	text-decoration: none;
+	border-radius: 30px;
+	border: solid 3px #3fceff;
+
+	color: #3fceff;
+	font-size: .2rem;
+	letter-spacing: 1px;
+
+	/*box-shadow: 0px 5px 3px rgba(0,0,0,.3);*/
+}
+
 section{
 	padding: 80px 0;
 }
@@ -117,6 +134,8 @@ section{
 /*----------------------main css-----------------------*/
 
 
+/*=================navigator=================*/
+
 #logo{
 	float: left;
 }
@@ -149,6 +168,10 @@ nav a:hover{
 	/*background-color: #3FCEFF;*/
 	color: #3FCEFF;
 }
+
+
+
+/*=================banner=================*/
 
 .banner{
 	width: 100%;
@@ -193,6 +216,10 @@ nav a:hover{
 	margin: 0.8rem;
 }
 
+
+
+/*=================about=================*/
+
 .video-wrapper{
 	box-shadow: 20px 20px 0 rgba(0,0,0,.1);
 /*	width: 95%;
@@ -214,9 +241,11 @@ nav a:hover{
 }
 
 
+/*=================our skill=================*/
+
 .ourskill h2{
 	text-align: center;
-	padding-bottom: 35px;
+	padding-bottom: 60px;
 }
 
 .progress-bar{
@@ -259,6 +288,10 @@ nav a:hover{
 	background-color: #F9CB40;
 }
 
+
+
+/*=================working process=================*/
+
 #working-process{
 	width: 100%;
 	background-color: #f7f7f7;
@@ -294,12 +327,17 @@ nav a:hover{
 	text-align: center;
 	/*margin: 8px;*/
 	transition-duration: .5s;
+	padding: 20px 5px;
 }
 
 #working-process .col-3:hover{
-	border-bottom: 3px solid #3fceff;
+	border-bottom: 2px solid #3fceff;
 	background-color: white;
 	box-shadow: 0 0 20px rgba(201,201,201, .5)
+}
+
+#working-process i{
+	color: #3fceff;
 }
 
 #working-process h3{
@@ -308,12 +346,16 @@ nav a:hover{
 }
 
 #working-process p{
-	margin: 0 50px;
+	margin: 0 30px;
 }
+
+
+
+/*=================what we do=================*/
 
 #whatwedo h2{
 	text-align: center;
-	padding: 40px;
+	padding-bottom: 60px;
 }
 
 #whatwedo .col-4{
@@ -330,9 +372,21 @@ nav a:hover{
 }
 
 #whatwedo .col-4:hover h3{
-		color: #3fceff;
-		transition-duration: .2s;
+	color: #3fceff;
+	transition-duration: .2s;
 }
+
+#whatwedo .col-4:hover i{
+	color: #3fceff;
+	transition-duration: .2s;
+}
+
+#whatwedo .wedothis{
+	margin: 20px 10px;
+}
+
+
+/*=================achievement=================*/
 
 #achievement{
 	background-color: #333;
@@ -349,11 +403,18 @@ nav a:hover{
 	transition-duration: .5s;
 }
 
+#achievement h3{
+	margin: 10px;
+}
+
 #achievement p{
 	font-size: 1.5rem;
 	font-weight: bold;
 }
 
+
+/*=================our protfolio=================*/
+/*
 #ourportfolio h2{
 	text-align: center;
 }
@@ -384,11 +445,6 @@ nav a:hover{
 	float: left
 }
 
-.viewbox{
-	width: 100%;
-	/*display: flex;*/
-}
-
 .photo{
 	background-color: #333;
 	display: inline-flex;
@@ -410,15 +466,169 @@ nav a:hover{
 	height: 600px;
 }
 
+*/
+/*=================price table=================*/
 
+#pricetable {
+	background-color: #fafafa;
+}
+
+#pricetable .row{
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
 
 #pricetable .col-3{
 	text-align: center;
+	background-color: #fff;
+	box-shadow: 0 0 6px rgba(0,0,0,.6)
+	margin: -5px;
+	transition-duration: .5s;
+}
+
+#pricetable .col-3:hover{
+	background-color: #fff;
+	box-shadow: 0 0 15px rgba(0,0,0,.6)
+}
+
+#pricetable .col-3:hover .price{
+	background-color: #2fceff;
+	color: #fff;
+}
+
+#pricetable .col-3:hover .btn-unclick{
+	background-color: #3fceff;
+	color: white;
+}
+
+#pricetable h2{
+	padding-bottom: 60px;
 }
 
 #pricetable h3{
 	padding: 10px;
+	margin: 20px;
+
+	letter-spacing: 2px
 }
+
+#pricetable .price{
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+
+	margin: 0 -5px;
+	background-color: #f1f1f1;
+}
+
+#pricetable p{
+	font-size: 3rem;
+}
+
+#pricetable ul{
+	margin: 35px 15px;
+}
+
+#pricetable li{
+	line-height: 2.8rem;
+}
+
+#pricetable .detail{
+	border-bottom: solid 3px #f9f9f9;
+	margin: 0 -5px;
+}
+
+#pricetable .buy{
+	margin: 25px;
+}
+
+
+
+/*=================our creative team=================*/
+
+#ourteam h2{
+	padding-bottom: 60px;
+}
+
+#ourteam h3{
+	margin-top: 20px;
+}
+
+#ourteam .row{
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+#ourteam .col-3{
+	box-shadow: 0 0 6px rgba(0,0,0,.6)
+}
+
+.crew{
+	position: relative;
+}
+
+#ourteam .col-3:hover{
+	box-shadow: 0 0 15px rgba(0,0,0,.6)
+}
+
+#ourteam .col-3:hover .info{
+	display: block;
+	transition-duration: .5s;
+}
+
+#ourteam .col-3:hover img{
+	opacity: .5;
+	transition-duration: .5s;
+}
+
+.info{
+	height: 100%;
+	top: 0px;
+	position: absolute;
+
+	text-align: center;
+	flex-direction: column;
+	display: none;
+
+	margin: 17px -0px;
+}
+
+.info p{
+	padding: 8px
+}
+
+.links a{
+	text-decoration: none;
+	color: #3fceff;
+
+	width: 30px;
+	height: 30px;
+
+	border: solid 1px #3fceff;
+	border-radius: 50% 50%;
+
+	text-align: center;
+	line-height: 30px;		
+}
+
+.links ul{
+	display: inline-flex;
+
+	-ms-align-items: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.links li{
+	margin: 8px;
+}
+
+
+
+
 
 
 
